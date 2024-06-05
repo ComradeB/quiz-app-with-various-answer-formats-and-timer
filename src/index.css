@@ -1,0 +1,123 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 2rem;
+  letter-spacing: 0.5px;
+  background: whitesmoke;
+}
+
+h1 {
+  margin-top: 40px;
+}
+
+button {
+  background: none;
+  border-radius: 5px;
+  color: inherit;
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 8rem;
+  max-width: 10rem;
+}
+
+
+
+.progress-bar {
+  display: flex;
+  gap: 0.5rem;
+  min-width: 10rem;
+}
+
+.bar {
+  border: 5px solid lightgray;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.filled {
+  border: 5px solid gray;
+  transition-duration: 1s;
+}
+
+.current {
+  border: 5px solid  #b92a35;
+  transition-duration: 0.5s;
+}
+
+button {
+  cursor: pointer;
+  background: #b92a35;
+  font-size: 1rem;
+  min-width: 5rem;
+  max-width: 10rem;
+  padding: 1rem;
+  font-family: 'Roboto';
+  letter-spacing: 0.5px;
+  color: white;
+}
+
+.start-reset-button {
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.start-end-container {
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.timer {
+  border: 3px solid grey;
+  border-radius: 5px;
+  padding: 0.25rem 1.25rem;
+  color: grey;
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+
+input {
+  appearance: none;
+  cursor: pointer;
+}
+
+textarea {
+  height: 20vh;
+  width: 80vw;
+}
+
+.warning {
+  color: red;
+}
+
+.choices label {
+  display: inline-block;
+  padding: 1rem;
+  border: 2px solid grey;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+label.checked {
+  background-color: lightcoral;
+  color: #fff;
+}
+
+.choices label:hover {
+  background-color: lightcoral;
+  color: #fff;
+}
+
+.short-answer {
+  height: 4rem;
+}
