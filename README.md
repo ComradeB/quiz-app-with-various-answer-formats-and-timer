@@ -1,30 +1,16 @@
-# React + TypeScript + Vite
+# A simple quiz app as a React + TypeScript demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Answer formats
+1. Multple choice (single answer)
+2. Multiple choice (multiple answers)
+3. Short text input
+4. Long text input
 
-Currently, two official plugins are available:
+The quiz can be expanded dynamically by simply adding new questions to questions.ts.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Unfinished quizzes are saved to LocalStorage and open to the current question upon refreshing the page. 
 
-## Expanding the ESLint configuration
+A score is not provided at the end as the answers are meant to be evaluated by a human upon completion.ric
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Improvement ideas for future iterations
+- Force the user to select the number of answers the questions asks for before proceeding (e.g. "Select two planets" --> cannot submit answer unless exactly two choices have been selected).
