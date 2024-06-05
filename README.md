@@ -12,5 +12,5 @@ Unfinished quizzes are saved to LocalStorage and open to the current question up
 
 A score is not provided at the end as the answers are meant to be evaluated by a human upon completion.
 
-## Improvement ideas for future iterations
+## In future iterations:
 - Force the user to select the number of answers the questions asks for before proceeding (e.g. "Select two planets" --> cannot submit answer unless exactly two choices have been selected).
