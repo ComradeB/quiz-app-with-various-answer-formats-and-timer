@@ -14,3 +14,4 @@ A score is not provided at the end as the answers are meant to be evaluated by a
 
 ## In future iterations:
 - Force the user to select the number of answers the questions asks for before proceeding (e.g. "Select two planets" --> cannot submit answer unless exactly two choices have been selected).
+- Make a small backend with an API to store user submissions
